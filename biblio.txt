@@ -1,0 +1,8 @@
+Feedforward :
+    - Réseau neuronal artificiel organisé en plusieurs couches au sein desquelles une information circule de la couche d'entrée vers la couche de sortie uniquement, il s'agit donc d'un réseau à propagation directe.
+
+Backpropagation :
+    - Dans le perceptron multicouche à rétropropagation, les neurones d'une couche sont reliés à la totalité des neurones des couches adjacentes. Ces liaisons sont soumises à un coefficient altérant l'effet de l'information 
+    sur le neurone de destination. Ainsi, le poids de chacune de ces liaisons est l'élément clef du fonctionnement du réseau : la mise en place d'un Perceptron multicouche pour résoudre un problème passe donc par la détermination 
+    des meilleurs poids applicables à chacune des connexions inter-neuronales. Ici, cette détermination s'effectue au travers d'un algorithme de rétropropagation.
+    - https://fr.wikipedia.org/wiki/R%C3%A9tropropagation_du_gradient

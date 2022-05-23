@@ -1,0 +1,64 @@
+Ce projet a pour but de vous faire découvrir les réseaux de neurones artificiels, et
+d’implémenter les algorithmes au coeur du processus d’apprentissage de ces derniers.
+Vous allez par la même occasion être amené à vous (re)familiariser avec la manipulation
+de dérivées et de calculs matriciels car c’est des outils mathématiques indispensables à
+la bonne réalisation du sujet.
+
+* Multilayer Perceptron
+
+    - réseau de type feedforward : input layer -> hidden layer -> output layer
+
+    - poids d’une couche à l’autre représentés par matrices deux dimensions 
+
+    - biais représenté par un neurone spécial, pas d’entrée, sortie vaut toujours 1
+
+* Perceptron
+
+    - type de neurone qui compose le multilayer perceptron, présence d’une ou plusieurs connexions d’entrées, d’une fonction d’activation et d’une unique sortie. Les connexions contiennent un poids (aussi appelé paramètre) qui est appris durant la phase d’entrainement.
+
+    - obtenir sortie perceptron deux étapes : calculer la somme pondérée (weighted sum) && appliquer une fonction d’activation sur cette somme pondérée (sigmoid, hyperboloid tangent, rectified linear unit)
+
+* Phase d’apprentissage
+
+    - savoir definir feedforward, backpropagation et gradient descent
+
+* Dataset
+
+    - csv de 32 colonnes
+
+    -  Il est bon de prendre l’habitude de jouer avec ces données en les affichant sur des graphs pour ensuite les manipuler plus aisément
+
+* Implémentation
+
+    - au moins deux couches cachées
+
+    - mettre en place la fonction softmax sur la couche de sortie pour obtenir une distribution probabiliste
+
+    -  séparer votre dataset en deux parties, une pour l’apprentissage et une pour la validation
+
+    - visualiser les performances : afficher à chaque époque la métrique d’entrainement et de validation && implémenter l’affichage des courbes d’apprentissage
+
+* Rendu
+
+    - entrainement : backpropagation et la descente de gradient pour apprendre et devra sauvegarder le modèle (la topologie et les poids du réseau)
+
+    - prediction : prédiction sur un set donné puis l’évaluer en utilisant la fonction d’erreur d’entropie croisée binaire
+
+* Bonus exemple
+
+    - Une fonction d’optimisation plus complexe (par exemple : nesterov momentum, RMSprop, Adam, ...).
+
+    - Un affichage de plusieurs courbes d’entrainements sur le même graph (très pratique pour comparer plusieurs modèles).
+    
+    - Une sauvegarde de l’historique des métriques obtenues durant l’entrainement.
+
+    - De l’early stopping.
+
+    - Évaluer l’apprentissage avec plusieurs métriques
+
+
+* Sources
+
+    - https://www.allaboutcircuits.com/technical-articles/how-to-create-a-multilayer-perceptron-neural-network-in-python/
+    
+
